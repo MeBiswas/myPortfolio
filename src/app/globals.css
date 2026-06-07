@@ -1,10 +1,42 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #0d1117;
+  --bg2: #111820;
+  --bg3: #161e28;
+  --bg4: #1c2635;
+  --bg5: #212e3e;
+
+  --teal: #00c896;
+  --teal-dark: #00a87a;
+  --teal2: #00a87a;
+  --teal-a12: rgba(0, 200, 150, 0.12);
+  --teal-a20: rgba(0, 200, 150, 0.20);
+  --teal-a06: rgba(0, 200, 150, 0.06);
+
+  --text: #e2eaf2;
+  --text2: #8a9cb0;
+  --text-muted: #8a9cb0;
+  --text3: #4a5e72;
+  --text-faint: #4a5e72;
+
+  --border: rgba(255, 255, 255, 0.07);
+  --border2: rgba(0, 200, 150, 0.18);
+  --border-accent: rgba(0, 200, 150, 0.18);
+
+  --radius: 10px;
+  --radius-sm: 7px;
+  --r: 10px;
+  --r-sm: 7px;
+
+  --font: 'Plus Jakarta Sans', sans-serif;
+  --mono: 'Fira Code', monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+/* 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -23,4 +55,185 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+} */
+
+body {
+  @apply bg-[#0d1117] text-[#e2eaf2] antialiased overflow-x-hidden;
+  font-family: var(--font-geist-sans);
+}
+
+::selection {
+  background: rgba(0, 200, 150, 0.2);
+  color: #00c896;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #212e3e;
+  border-radius: 999px;
+}
+
+/* Reusable Components */
+.container-custom {
+  @apply max-w-7xl mx-auto px-6 lg:px-10;
+}
+
+.section {
+  @apply py-20;
+}
+
+.section-alt {
+  background: var(--bg2);
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold tracking-tight mb-12;
+}
+
+.section-title span {
+  color: var(--teal);
+}
+
+.section-label {
+  @apply uppercase text-xs tracking-[0.2em] font-semibold mb-3 flex items-center gap-3;
+  color: var(--teal);
+}
+
+.section-label::after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background: var(--teal);
+  opacity: 0.4;
+}
+
+/* Cards */
+.card {
+  @apply transition-all duration-300;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.card:hover {
+  border-color: var(--border-accent);
+}
+
+/* Buttons */
+.btn-primary {
+  @apply inline-flex items-center gap-2 px-6 py-3 rounded-full font-semibold transition-all duration-200;
+  background: var(--teal);
+  color: #0d1117;
+}
+
+.btn-primary:hover {
+  background: var(--teal-dark);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 px-6 py-3 rounded-full transition-all duration-200;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.btn-secondary:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  transform: translateY(-1px);
+}
+
+/* Skill Chips */
+.chip {
+  @apply text-xs px-3 py-1 rounded-md transition-all duration-200;
+  background: var(--bg4);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+}
+
+.chip:hover {
+  color: var(--teal);
+  border-color: var(--border-accent);
+}
+
+/* Project Tags */
+.tag {
+  @apply text-xs px-2 py-1 rounded;
+  background: var(--bg5);
+  border: 1px solid var(--border);
+  color: var(--text-faint);
+}
+
+/* Forms */
+.input {
+  @apply w-full px-4 py-3 rounded-lg outline-none transition-colors;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+}
+
+.input:focus {
+  border-color: var(--teal);
+}
+
+.textarea {
+  @apply w-full px-4 py-3 rounded-lg resize-none outline-none transition-colors;
+  min-height: 140px;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+}
+
+.textarea:focus {
+  border-color: var(--teal);
+}
+
+/* Navigation Blur */
+.nav-blur {
+  backdrop-filter: blur(16px);
+  background: rgba(13, 17, 23, 0.88);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Fade Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse Dot */
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--teal);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 200, 150, 0.5);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 200, 150, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 200, 150, 0);
+  }
 }
