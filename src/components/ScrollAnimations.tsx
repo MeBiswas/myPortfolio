@@ -14,10 +14,10 @@ export default function ScrollAnimations() {
       { threshold: 0.08 }
     );
 
-    document.querySelectorAll('.fi').forEach((el, i) => {
-      const computedStyle = window.getComputedStyle(el);
-      const currentDelay = computedStyle.transitionDelay;
+    const elements = document.querySelectorAll<HTMLElement>('.fi');
+    elements.forEach((el, i) => {
       const delayMs = (i % 4) * 60;
+
       el.style.transitionDelay = `${delayMs}ms`;
       obs.observe(el);
     });
