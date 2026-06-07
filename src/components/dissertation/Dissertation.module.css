@@ -1,0 +1,131 @@
+.section {
+  padding: 80px 40px;
+}
+
+.section-alt {
+  background: var(--bg2);
+}
+
+.sec-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal);
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: var(--mono);
+}
+
+.sec-num {
+  color: var(--text3);
+}
+
+.sec-eyebrow::after {
+  content: '';
+  flex: 0 0 32px;
+  height: 1px;
+  background: var(--teal);
+  opacity: 0.35;
+}
+
+.sec-title {
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 48px;
+  line-height: 1.2;
+}
+
+.sec-title-hl {
+  color: var(--teal);
+}
+
+.dissertation-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.dissertation-intro {
+  font-size: 15px;
+  color: var(--text2);
+  line-height: 1.85;
+  font-weight: 300;
+  max-width: 800px;
+}
+
+.dissertation-intro-p {
+  margin-bottom: 16px;
+}
+
+.dissertation-intro-p-last {
+  margin-bottom: 0;
+}
+
+.dissertation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dissertation-card {
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.dissertation-card:hover {
+  border-color: var(--border-accent);
+  transform: translateY(-2px);
+}
+
+.card-icon {
+  font-size: 32px;
+  color: var(--teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: var(--teal-a06);
+  border-radius: var(--radius-sm);
+}
+
+.dissertation-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.dissertation-card-text {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.65;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 60px 20px;
+  }
+
+  .dissertation-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .dissertation-grid {
+    grid-template-columns: 1fr;
+  }
+}
