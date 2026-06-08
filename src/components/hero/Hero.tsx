@@ -1,5 +1,6 @@
 'use client';
 
+import { Hash } from 'lucide-react';
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -7,16 +8,15 @@ export default function Hero() {
     <section className={styles.hero} id="home">
       <div className={styles['hero-noise']}></div>
       <div className={styles['hero-avail']}>
-        <span className={styles['hero-avail-dot']}></span>
-        Available for junior data engineer roles
+        <Hash size={10} color='oklch(70% .02 250' />
+        available for junior data engineer roles
       </div>
       <h1 className={styles['hero-title']}>
-        Building <span className={styles['hero-title-hl']}>reliable data</span>
-        <br />
-        pipelines that scale.
+        Building reliable <span className={styles['hero-title-hl']}> data pipelines </span>
+        that scale.
       </h1>
       <p className={styles['hero-sub']}>
-        I'm <strong className={styles['hero-sub-strong']}>Abhipriyo Biswas</strong> — a software engineer with 7+ years of production
+        I&apos;m <strong className={styles['hero-sub-strong']}>Abhipriyo Biswas</strong> — a software engineer with 7+ years of production
         experience, now focused on data engineering with Python, SQL, PostgreSQL, and Apache Airflow.
       </p>
       <div className={styles['hero-btns']}>

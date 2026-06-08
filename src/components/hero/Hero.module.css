@@ -1,69 +1,63 @@
 .hero {
-  min-height: 100vh;
-  padding: 120px 40px 80px;
   display: flex;
+  overflow: hidden;
+  margin-top: 60px;
+  min-height: 100vh;
+  position: relative;
   flex-direction: column;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
+  padding: 120px 40px 80px;
   background: radial-gradient(
     ellipse 70% 60% at 80% 20%,
     rgba(0, 200, 150, 0.05) 0%,
     transparent 60%
   );
-  margin-top: 60px;
 }
 
 .hero-noise {
-  position: absolute;
   inset: 0;
-  pointer-events: none;
   opacity: 0.025;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  position: absolute;
+  pointer-events: none;
   background-size: 200px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 .hero-avail {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 12px;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
   color: var(--teal);
+  align-items: center;
+  margin-bottom: 24px;
+  display: inline-flex;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 22px;
-}
-
-.hero-avail-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--teal);
-  box-shadow: 0 0 0 0 var(--teal-a12);
-  animation: sonar 2s infinite;
 }
 
 .hero-title {
-  font-size: clamp(38px, 5.5vw, 68px);
-  font-weight: 800;
-  line-height: 1.08;
-  letter-spacing: -0.03em;
+  font-weight: 700;
+  max-width: 900px;
+  line-height: 1.05;
   color: var(--text);
-  margin-bottom: 22px;
-  max-width: 800px;
+  margin-bottom: 24px;
+  letter-spacing: -1.8px;
+  font-size: clamp(38px, 5.5vw, 68px);
 }
 
 .hero-title-hl {
-  color: var(--teal);
+  color: #0000;
+  background-clip: text;
+  background-image: var(--gradient-hero);
 }
 
 .hero-sub {
-  font-size: 16px;
-  color: var(--text2);
-  max-width: 560px;
-  line-height: 1.8;
-  margin-bottom: 36px;
   font-weight: 300;
+  max-width: 672px;
+  color: var(--text2);
+  margin-bottom: 36px;
+  font-size: var(--text-xl);
+  line-height: var(--tw-leading, var(--text-xl--line-height));
 }
 
 .hero-sub-strong {
