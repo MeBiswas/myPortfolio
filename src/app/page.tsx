@@ -10,18 +10,18 @@ import Experience from "@/components/experience/Experience"
 import Dissertation from "@/components/dissertation/Dissertation"
 
 export default function HomePage() {
-    return (
+  return (
     <>
-        <Navbar />
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Dissertation />
-        <Experience />
-        <Education />
-        <Contact />
-        <Footer />
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Dissertation />
+      <Experience />
+      <Education />
+      <Contact />
+      <Footer />
     </>
   )
 }
