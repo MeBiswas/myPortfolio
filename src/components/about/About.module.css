@@ -1,22 +1,25 @@
 .section {
-  padding: 80px 40px;
+  margin: 0 auto;
+  max-width: 1152px;
+  padding: 80px 0;
 }
 
 .section-alt {
-  background: var(--bg2);
+  color: oklch(0.96 0.01 250);
+  border-top: 1px solid oklch(0.25 0.01 250);
 }
 
 .sec-eyebrow {
-  display: flex;
-  align-items: center;
   gap: 10px;
+  display: flex;
   font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--teal);
   font-weight: 600;
+  color: var(--teal);
+  align-items: center;
   margin-bottom: 10px;
+  letter-spacing: 0.1em;
   font-family: var(--mono);
+  text-transform: uppercase;
 }
 
 .sec-num {
@@ -46,23 +49,30 @@
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 56px;
   align-items: start;
+  gap: calc(var(--spacing) * 10);
+  margin-top: calc(var(--spacing) * 6);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .about-bio {
-  font-size: 15px;
-  color: var(--text2);
   line-height: 1.85;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: var(--text-lg);
+  grid-column: span 2 / span 2;
+  color: var(--muted-foreground);
 }
 
-.about-bio-p {
-  margin-top: 16px;
+.about-bio p {
+  margin-bottom: 20px;
 }
 
-.about-bio-strong {
+.about-bio p span {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+/* .about-bio-strong {
   color: var(--text);
   font-weight: 500;
 }
@@ -164,7 +174,7 @@
   height: 15px;
   background: var(--teal);
   animation: blink 1s step-end infinite;
-}
+} */
 
 @media (max-width: 900px) {
   .section {
