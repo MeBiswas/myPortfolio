@@ -1,7 +1,7 @@
 'use client';
 
-import { Hash } from 'lucide-react';
 import styles from './Hero.module.css';
+import { Hash, ArrowRight } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -21,7 +21,8 @@ export default function Hero() {
       </p>
       <div className={styles['hero-btns']}>
         <a href="#projects" className={styles['btn-primary']}>
-          <i className="ti ti-layout-grid"></i> View projects
+          View projects
+          <ArrowRight size={16} />
         </a>
         <a href="#contact" className={styles['btn-ghost']}>
           <i className="ti ti-mail"></i> Get in touch

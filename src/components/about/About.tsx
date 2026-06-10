@@ -8,7 +8,7 @@ export default function About() {
       <div className={styles['sec-eyebrow']}>
         <span className={styles['sec-num']}>01 —</span> About
       </div>
-      <h2 className={styles['sec-title']}>
+      {/* <h2 className={styles['sec-title']}>
         From shipping production apps
         <br />
         to shipping <span className={styles['sec-title-hl']}>production data.</span>
@@ -19,10 +19,10 @@ export default function About() {
             <p>
               I spent 7+ years building production-grade applications across full stack, frontend, and mobile —
               at companies like <strong className={styles['about-bio-strong']}>TELUS Digital</strong> and <strong className={styles['about-bio-strong']}>Etelligens Technologies</strong>. I
-              learned what it takes to design systems that don't break in front of real users.
+              learned what it takes to design systems that don&apos;t break in front of real users.
             </p>
             <p className={styles['about-bio-p']}>
-              Now I'm channelling that engineering rigour into data. I'm pursuing an <em className={styles['about-bio-em']}>MSc in Data Science</em> at
+              Now I&apos;m channelling that engineering rigour into data. I&apos;m pursuing an <em className={styles['about-bio-em']}>MSc in Data Science</em> at
               Central University of Haryana, and building real ETL pipelines, data warehouses, and analytics systems
               with Python, SQL, PostgreSQL and Apache Airflow.
             </p>
@@ -39,7 +39,7 @@ export default function About() {
             </div>
             <div className={styles['meta-cell']}>
               <div className={styles['meta-cell-lbl']}>Education</div>
-              <div className={styles['meta-cell-val']}>MSc Data Science, '26</div>
+              <div className={styles['meta-cell-val']}>MSc Data Science, &apos;26</div>
             </div>
             <div className={styles['meta-cell']}>
               <div className={styles['meta-cell-val-open']}>Open to work</div>
@@ -67,63 +67,75 @@ export default function About() {
             </div>
             <div style={{ color: 'var(--text3)' }}>{'{'}  </div>
             <div className={styles.indent}>
-              <span style={{ color: '#86EFAC' }}>"role"</span>:{' '}
-              <span style={{ color: '#FCA5A5' }}>"Junior Data Engineer"</span>,
+              <span style={{ color: '#86EFAC' }}>&quot;role&quot;</span>:{' '}
+              <span style={{ color: '#FCA5A5' }}>&quot;Junior Data Engineer&quot;</span>,
             </div>
             <div className={styles.indent}>
-              <span style={{ color: '#86EFAC' }}>"stack"</span>: [
+              <span style={{ color: '#86EFAC' }}>&quot;stack&quot;</span>: [
               <span style={{ color: '#FCA5A5' }}>
-                "Python"
+                &quot;Python&quot;
               </span>,
               <span style={{ color: '#FCA5A5' }}>
-                "SQL"
+                &quot;SQL&quot;
               </span>,
               <span style={{ color: '#FCA5A5' }}>
-                "Airflow"
+                &quot;Airflow&quot;
               </span>
               ],
             </div>
             <div className={styles.indent}>
-              <span style={{ color: '#86EFAC' }}>"db"</span>: [
+              <span style={{ color: '#86EFAC' }}>&quot;db&quot;</span>: [
               <span style={{ color: '#FCA5A5' }}>
-                "PostgreSQL"
+                &quot;PostgreSQL&quot;
               </span>,
               <span style={{ color: '#FCA5A5' }}>
-                "MySQL"
+                &quot;MySQL&quot;
               </span>
               ],
             </div>
             <div className={styles.indent}>
-              <span style={{ color: '#86EFAC' }}>"cloud"</span>: [
+              <span style={{ color: '#86EFAC' }}>&quot;cloud&quot;</span>: [
               <span style={{ color: '#FCA5A5' }}>
-                "AWS"
+                &quot;AWS&quot;
               </span>,
               <span style={{ color: '#FCA5A5' }}>
-                "GCP"
+                &quot;GCP&quot;
               </span>,
               <span style={{ color: '#FCA5A5' }}>
-                "Azure"
+                &quot;Azure&quot;
               </span>
               ],
             </div>
             <div className={styles.indent}>
-              <span style={{ color: '#86EFAC' }}>"experience"</span>:{' '}
-              <span style={{ color: '#93C5FD' }}>"7+ years"</span>,
+              <span style={{ color: '#86EFAC' }}>&quot;experience&quot;</span>:{' '}
+              <span style={{ color: '#93C5FD' }}>&quot;7+ years&quot;</span>,
             </div>
             <div className={styles.indent}>
-              <span style={{ color: '#86EFAC' }}>"open_to_work"</span>:{' '}
+              <span style={{ color: '#86EFAC' }}>&quot;open_to_work&quot;</span>:{' '}
               <span style={{ color: '#6EE7B7' }}>true</span>
             </div>
             <div style={{ color: 'var(--text3)' }}>{'}'}</div>
             <div style={{ marginTop: '8px' }}>
               <span style={{ color: 'var(--teal)' }}>$</span>{' '}
               <span style={{ color: '#7DD3FC' }}>echo</span>{' '}
-              <span style={{ color: '#FCA5A5' }}>"Ready to build."</span>
+              <span style={{ color: '#FCA5A5' }}>&quot;Ready to build.&quot;</span>
             </div>
             <div className={styles.cursor}>
               Ready to build.<span className={styles.blink}></span>
             </div>
           </div>
+        </div>
+      </div> */}
+      <div className={styles['about-grid']}>
+        <h2 className={styles['sec-title']}>From shipping production apps to shipping production data.</h2>
+        <div className={styles['about-bio']}>
+          <p>I spent 7+ years building production-grade applications across full stack, frontend, and mobile — at companies like TELUS Digital and Etelligens Technologies. I learned what it takes to design systems that don&apos;t break in front of real users.</p>
+          <p>
+            Now I&apos;m channeling that engineering rigor into data. I&apos;m pursuing an
+            <span> MSc in Data Science </span>
+            at Central University of Haryana, and building real ETL pipelines, data warehouses, and analytics systems with Python, SQL, PostgreSQL, and Apache Airflow.
+          </p>
+          <p>I care about idempotency, data quality, modular architecture, and pipelines that you can trust at 3 AM.</p>
         </div>
       </div>
     </section>
