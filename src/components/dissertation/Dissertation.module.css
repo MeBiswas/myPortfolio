@@ -1,4 +1,6 @@
 .section {
+  margin: 0 auto;
+  max-width: 1152px;
   padding: 80px 40px;
 }
 
@@ -7,16 +9,16 @@
 }
 
 .sec-eyebrow {
-  display: flex;
-  align-items: center;
   gap: 10px;
+  display: flex;
   font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--teal);
   font-weight: 600;
+  color: var(--teal);
+  align-items: center;
   margin-bottom: 10px;
+  letter-spacing: 0.1em;
   font-family: var(--mono);
+  text-transform: uppercase;
 }
 
 .sec-num {
@@ -25,19 +27,19 @@
 
 .sec-eyebrow::after {
   content: '';
-  flex: 0 0 32px;
   height: 1px;
-  background: var(--teal);
   opacity: 0.35;
+  flex: 0 0 32px;
+  background: var(--teal);
 }
 
 .sec-title {
-  font-size: clamp(24px, 3.5vw, 36px);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  line-height: 1.2;
   color: var(--text);
   margin-bottom: 48px;
-  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-size: clamp(24px, 3.5vw, 36px);
 }
 
 .sec-title-hl {
@@ -45,17 +47,17 @@
 }
 
 .dissertation-content {
+  gap: 32px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
 }
 
 .dissertation-intro {
   font-size: 15px;
-  color: var(--text2);
-  line-height: 1.85;
   font-weight: 300;
   max-width: 800px;
+  line-height: 1.85;
+  color: var(--text2);
 }
 
 .dissertation-intro-p {
@@ -67,35 +69,35 @@
 }
 
 .dissertation-grid {
+  gap: 20px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
 }
 
 .dissertation-card {
-  background: var(--bg3);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 28px 24px;
-  display: flex;
-  flex-direction: column;
   gap: 16px;
+  display: flex;
+  padding: 28px 24px;
+  background: var(--bg3);
+  flex-direction: column;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
   transition: border-color 0.2s, transform 0.2s;
 }
 
 .dissertation-card:hover {
-  border-color: var(--border-accent);
   transform: translateY(-2px);
+  border-color: var(--border-accent);
 }
 
 .card-icon {
-  font-size: 32px;
-  color: var(--teal);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 60px;
   height: 60px;
+  display: flex;
+  font-size: 32px;
+  color: var(--teal);
+  align-items: center;
+  justify-content: center;
   background: var(--teal-a06);
   border-radius: var(--radius-sm);
 }
@@ -108,10 +110,10 @@
 }
 
 .dissertation-card-text {
-  font-size: 13px;
-  color: var(--text2);
-  line-height: 1.65;
   margin: 0;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text2);
 }
 
 @media (max-width: 900px) {
