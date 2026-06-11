@@ -6,7 +6,7 @@ export default function Dissertation() {
   return (
     <section className={`${styles.section} ${styles['section-alt']}`} id="dissertation">
       <div className={styles['sec-eyebrow']}>
-        <span className={styles['sec-num']}>05.5 —</span> Dissertation
+        <span className={styles['sec-num']}>04 —</span> Dissertation
       </div>
       <h2 className={styles['sec-title']}>
         Research &amp; <span className={styles['sec-title-hl']}>Academic Work</span>
@@ -14,7 +14,7 @@ export default function Dissertation() {
       <div className={`${styles['dissertation-content']} fi`}>
         <div className={styles['dissertation-intro']}>
           <p className={styles['dissertation-intro-p']}>
-            As part of my MSc in Data Science at Central University of Haryana, I'm conducting research and
+            As part of my MSc in Data Science at Central University of Haryana, I&apos;m conducting research and
             developing a comprehensive dissertation project focused on modern data engineering practices and their
             real-world applications.
           </p>
