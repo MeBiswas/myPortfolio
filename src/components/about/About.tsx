@@ -9,7 +9,9 @@ export default function About() {
         <span className={styles['sec-num']}>01 —</span> About
       </div>
       <div className={styles['about-grid']}>
-        <h2 className={styles['sec-title']}>From shipping production apps to shipping production data.</h2>
+        <h2 className={styles['sec-title']}>
+          From shipping <span className={styles['sec-title-hl']}>production apps</span> to shipping <span className={styles['sec-title-hl']}>production data</span>
+        </h2>
         <div className={styles['about-bio']}>
           <p>I spent 7+ years building production-grade applications across full stack, frontend, and mobile — at companies like TELUS Digital and Etelligens Technologies. I learned what it takes to design systems that don&apos;t break in front of real users.</p>
           <p>

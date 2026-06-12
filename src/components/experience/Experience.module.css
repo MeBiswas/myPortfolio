@@ -1,5 +1,11 @@
 .section {
-  padding: 80px 40px;
+  display: block;
+  max-width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 96px 24px;
+  color: var(--foreground);
+  border-top: 1px solid var(--border);
 }
 
 .sec-eyebrow {
@@ -37,7 +43,9 @@
 }
 
 .sec-title-hl {
-  color: var(--teal);
+  color: #0000;
+  background-clip: text;
+  background-image: var(--gradient-hero);
 }
 
 .exp-list {
@@ -130,9 +138,8 @@
   gap: 6px;
 }
 
-.exp-co-icon {
-  font-size: 13px;
-  color: var(--text3);
+.company-name {
+  color: var(--primary);
 }
 
 .exp-bullets {
@@ -159,18 +166,23 @@
 .exp-tech {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
-  margin-top: 12px;
+  color: var(--foreground);
+  gap: calc(var(--spacing) * 2);
+  border-color: var(--color-border);
+  margin-top: calc(var(--spacing) * 6);
 }
 
 .tech-tag {
-  font-size: 11px;
-  padding: 2px 8px;
-  border-radius: 4px;
-  background: var(--bg5);
-  color: var(--text3);
-  border: 1px solid var(--border);
-  font-family: var(--mono);
+  border-width: 1px;
+  border-radius: .25rem;
+  color: var(--primary);
+  font-size: var(--text-xs);
+  line-height: calc(1/0.75);
+  border-color: var(--border);
+  background-color: var(--secondary);
+  border-style: var(--tw-border-style);
+  padding-block: calc(var(--spacing) * 1);
+  padding-inline: calc(var(--spacing) * 2.5);
 }
 
 @media (max-width: 900px) {
