@@ -9,3 +9,14 @@ export interface Project {
   highlights: string[];
   technologies: string[];
 }
+
+export interface Experience {
+  id: string;
+  role: string;
+  dates: string;
+  tech: string[];
+  company: string;
+  filled: boolean;
+  location: string;
+  bullets: string[];
+}

@@ -44,7 +44,9 @@
 }
 
 .sec-title-hl {
-  color: var(--teal);
+  color: #0000;
+  background-clip: text;
+  background-image: var(--gradient-hero);
 }
 
 .about-grid {

@@ -1,10 +1,13 @@
 'use client';
 
+import { BookText } from 'lucide-react';
+import { ChartLine } from 'lucide-react';
+import { FlaskConical } from 'lucide-react';
 import styles from './Dissertation.module.css';
 
 export default function Dissertation() {
   return (
-    <section className={`${styles.section} ${styles['section-alt']}`} id="dissertation">
+    <section className={`${styles.section}`} id="dissertation">
       <div className={styles['sec-eyebrow']}>
         <span className={styles['sec-num']}>04 —</span> Dissertation
       </div>
@@ -22,7 +25,7 @@ export default function Dissertation() {
         <div className={styles['dissertation-grid']}>
           <div className={styles['dissertation-card']}>
             <div className={styles['card-icon']}>
-              <i className="ti ti-book"></i>
+              <BookText />
             </div>
             <h3 className={styles['dissertation-card-title']}>Research Focus</h3>
             <p className={styles['dissertation-card-text']}>
@@ -32,7 +35,7 @@ export default function Dissertation() {
           </div>
           <div className={styles['dissertation-card']}>
             <div className={styles['card-icon']}>
-              <i className="ti ti-flask-2"></i>
+              <FlaskConical />
             </div>
             <h3 className={styles['dissertation-card-title']}>Methodology</h3>
             <p className={styles['dissertation-card-text']}>
@@ -42,7 +45,7 @@ export default function Dissertation() {
           </div>
           <div className={styles['dissertation-card']}>
             <div className={styles['card-icon']}>
-              <i className="ti ti-chart-line"></i>
+              <ChartLine />
             </div>
             <h3 className={styles['dissertation-card-title']}>Applications</h3>
             <p className={styles['dissertation-card-text']}>

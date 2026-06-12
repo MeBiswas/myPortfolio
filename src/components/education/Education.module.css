@@ -1,9 +1,11 @@
 .section {
-  padding: 80px 40px;
-}
-
-.section-alt {
-  background: var(--bg2);
+  display: block;
+  max-width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 96px 24px;
+  color: var(--foreground);
+  border-top: 1px solid var(--border);
 }
 
 .sec-eyebrow {
@@ -41,7 +43,9 @@
 }
 
 .sec-title-hl {
-  color: var(--teal);
+  color: #0000;
+  background-clip: text;
+  background-image: var(--gradient-hero);
 }
 
 .edu-certs-grid {
@@ -202,17 +206,23 @@
 .chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  color: var(--foreground);
+  gap: calc(var(--spacing) * 2);
+  border-color: var(--color-border);
 }
 
 .chip {
-  font-size: 11px;
-  padding: 4px 10px;
-  border-radius: 5px;
-  background: var(--bg4);
-  border: 1px solid var(--border);
-  color: var(--text2);
+  border-width: 1px;
+  border-radius: .25rem;
+  color: var(--primary);
   transition: all 0.15s;
+  font-size: var(--text-xs);
+  line-height: calc(1/0.75);
+  border-color: var(--border);
+  background-color: var(--secondary);
+  border-style: var(--tw-border-style);
+  padding-block: calc(var(--spacing) * 1);
+  padding-inline: calc(var(--spacing) * 2.5);
 }
 
 .chip:hover {

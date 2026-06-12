@@ -1,12 +1,23 @@
 .footer {
-  background: var(--bg);
-  border-top: 1px solid var(--border);
-  padding: 22px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 22px 40px;
+  align-items: center;
+  background: var(--bg);
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+}
+
+.footer-wrap {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-inline: auto;
+  gap: calc(var(--spacing) * 4);
+  justify-content: space-between;
+  max-width: var(--container-6xl);
 }
 
 .footer-left {
@@ -15,32 +26,38 @@
 }
 
 .footer-left-strong {
-  color: var(--text2);
   font-weight: 500;
+  color: var(--text2);
 }
 
 .footer-socials {
-  display: flex;
   gap: 8px;
+  display: flex;
 }
 
 .fsoc {
+  fill: none;
   width: 34px;
   height: 34px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
+  padding: 5px;
   display: flex;
+  cursor: pointer;
+  stroke-width: 2;
   align-items: center;
-  justify-content: center;
-  color: var(--text3);
-  font-size: 16px;
-  transition: all 0.18s;
+  stroke: currentcolor;
+  color: var(--primary);
+  stroke-linecap: round;
   text-decoration: none;
+  transition: all 0.18s;
+  stroke-linejoin: round;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
 }
 
 .fsoc:hover {
-  border-color: var(--teal);
   color: var(--teal);
+  border-color: var(--teal);
   background: var(--teal-a12);
 }
 

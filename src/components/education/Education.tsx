@@ -1,21 +1,24 @@
 'use client';
 
+import { School } from 'lucide-react';
 import styles from './Education.module.css';
 
 export default function Education() {
   return (
-    <section className={`${styles.section} ${styles['section-alt']}`} id="education">
+    <section className={`${styles.section}`} id="education">
       <div className={styles['sec-eyebrow']}>
-        <span className={styles['sec-num']}>05 —</span> Education &amp; Certifications
+        <span className={styles['sec-num']}>06 —</span> Education &amp; Certifications
       </div>
-      <h2 className={styles['sec-title']}>Qualifications &amp; credentials.</h2>
+      <h2 className={styles['sec-title']}>
+        Qualifications &amp; <span className={styles['sec-title-hl']}>credentials</span>
+      </h2>
       <div className={`${styles['edu-certs-grid']} fi`}>
         <div>
           <div className={styles['edu-header']}>Education</div>
           <div className={styles['edu-list']}>
             <div className={styles['edu-card']}>
               <div className={styles['edu-icon']} style={{ background: 'rgba(0,200,150,0.1)', color: 'var(--teal)' }}>
-                <i className="ti ti-school"></i>
+                <School size={14} color='oklch(78% 0.17 165)' />
               </div>
               <div>
                 <div className={styles['edu-deg']}>M.Sc. Data Science</div>
@@ -28,7 +31,7 @@ export default function Education() {
             </div>
             <div className={styles['edu-card']}>
               <div className={styles['edu-icon']} style={{ background: 'var(--bg4)', color: 'var(--text3)' }}>
-                <i className="ti ti-school"></i>
+                <School size={14} color='oklch(78% 0.17 165)' />
               </div>
               <div>
                 <div className={styles['edu-deg']}>B.A. Computer Science</div>
