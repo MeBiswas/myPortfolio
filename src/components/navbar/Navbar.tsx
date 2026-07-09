@@ -32,7 +32,7 @@ export default function Navbar() {
           <a
             className={styles['btn-resume']}
             download="Abhipriyo_Biswas_Resume.pdf"
-            href="/Abhipriyo_Biswas_Junior_Resume.pdf"
+            href="/Abhipriyo_Biswas_Resume.pdf"
           >
             <Download size={16} />Resume
           </a>
