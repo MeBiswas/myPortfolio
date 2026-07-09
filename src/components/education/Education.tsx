@@ -68,6 +68,18 @@ export default function Education() {
               </div>
               <span className={`${styles['cert-status']} ${styles['cs-earned']}`}>Earned</span>
             </div>
+            <div className={styles['cert-card']}>
+              <div className={styles['cert-left']}>
+                <div className={styles['cert-ico']} style={{ background: 'rgba(59,130,246,0.1)' }}>
+                  🗄️
+                </div>
+                <div>
+                  <div className={styles['cert-name']}>SQL (Intermediate)</div>
+                  <div className={styles['cert-by']}>HackerRank</div>
+                </div>
+              </div>
+              <span className={`${styles['cert-status']} ${styles['cs-earned']}`}>Earned</span>
+            </div>
             <div className={`${styles['cert-card']} ${styles.dashed}`}>
               <div className={styles['cert-left']}>
                 <div className={styles['cert-ico']} style={{ background: 'rgba(245,158,11,0.1)' }}>

@@ -1,11 +1,19 @@
+import styles from './Skills.module.css';
+
 interface SkillCardProps {
-  // Define your props here
+  title: string;
+  skills: string[];
 }
 
-export default function SkillCard(props: SkillCardProps) {
+export default function SkillCard({ title, skills }: SkillCardProps) {
   return (
-    <div className="skill-card">
-      {/* Skill card content */}
+    <div className={styles['skills-card']}>
+      <h3 className={styles['skill-title']}>{title}</h3>
+      <div className={styles['skills']}>
+        {skills.map((skill) => (
+          <span key={skill}>{skill}</span>
+        ))}
+      </div>
     </div>
   );
 }
