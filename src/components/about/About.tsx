@@ -10,16 +10,16 @@ export default function About() {
       </div>
       <div className={styles['about-grid']}>
         <h2 className={styles['sec-title']}>
-          From shipping <span className={styles['sec-title-hl']}>production apps</span> to shipping <span className={styles['sec-title-hl']}>production data</span>
+          Full-stack engineer. <span className={styles['sec-title-hl']}>Data-fluent</span>. <span className={styles['sec-title-hl']}>Production-first</span>.
         </h2>
         <div className={styles['about-bio']}>
-          <p>I spent 7+ years building production-grade applications across full stack, frontend, and mobile — at companies like TELUS Digital and Etelligens Technologies. I learned what it takes to design systems that don&apos;t break in front of real users.</p>
+          <p>I&apos;ve spent 7+ years shipping production software across full-stack web, frontend, and mobile — at companies like TELUS Digital and Etelligens Technologies. I&apos;ve integrated REST APIs, built React/Angular apps, optimized SQL, and worked with real users, real data, and real deadlines.</p>
           <p>
-            Now I&apos;m channeling that engineering rigor into data. I&apos;m pursuing an
+            Alongside that, I&apos;m deep in Python and SQL — pursuing an 
             <span> MSc in Data Science </span>
-            at Central University of Haryana, and building real ETL pipelines, data warehouses, and analytics systems with Python, SQL, PostgreSQL, and Apache Airflow.
+            at Central University of Haryana and building ETL pipelines, analytics, and dashboards with Python, PostgreSQL, Pandas, and Apache Airflow.
           </p>
-          <p>I care about idempotency, data quality, modular architecture, and pipelines that you can trust at 3 AM.</p>
+          <p>Whether the role is Python Developer, Full Stack Developer, Data Analyst, or Data Engineer — the same principles apply: clean code, correct data, modular architecture, and systems you can trust at 3 AM.</p>
         </div>
       </div>
     </section>

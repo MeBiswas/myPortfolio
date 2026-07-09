@@ -14,24 +14,24 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://abhipriyo-biswas-portfolio.vercel.app/"),
   title: {
-    default: "Abhipriyo Biswas | Junior Data Engineer",
+    default: "Abhipriyo Biswas | Software Engineer",
     template: "%s | Abhipriyo Biswas",
   },
   description:
-    "Junior Data Engineer specializing in Python, SQL, PostgreSQL, Apache Airflow, and ETL Pipeline Development.",
+    "Software Engineer specializing in React JS, Node JS, Python, SQL, PostgreSQL, Apache Airflow, and ETL Pipeline Development.",
   openGraph: {
-    title: "Abhipriyo Biswas | Junior Data Engineer",
+    title: "Abhipriyo Biswas | Software Engineer",
     description:
-      "Portfolio showcasing projects in Data Engineering, ETL Pipelines, Data Warehousing, and Analytics.",
+      "Portfolio showcasing projects in Software Engineering, ETL Pipelines, Data Warehousing, and Analytics.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Abhipriyo Biswas | Junior Data Engineer",
+    title: "Abhipriyo Biswas | Software Engineer",
     description:
-      "Portfolio showcasing projects in Data Engineering, ETL Pipelines, and Data Warehousing.",
+      "Portfolio showcasing projects in Software Engineering, ETL Pipelines, and Data Warehousing.",
   },
 };
 
