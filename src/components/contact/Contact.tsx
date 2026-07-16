@@ -29,8 +29,7 @@ export default function Contact() {
       <div className={styles['contact-grid']}>
         <div className={styles['contact-form-wrapper']}>
           <p className={styles['contact-intro']}>
-            I&apos;m actively interviewing for junior data engineer roles. If you&apos;re hiring, or know someone who is, I&apos;d
-            love to hear from you.
+            I&apos;m actively interviewing for Python Developer, Full Stack Developer, Data Analyst, and Data Engineer roles. If you&apos;re hiring — or know someone who is — I&apos;d love to hear from you.
           </p>
 
           <form className={styles['contact-form']} onSubmit={handleSubmit}>
