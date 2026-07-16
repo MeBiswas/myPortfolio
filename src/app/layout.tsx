@@ -27,6 +27,9 @@ export const metadata: Metadata = {
       "Portfolio showcasing projects in Software Engineering, ETL Pipelines, Data Warehousing, and Analytics.",
     type: "website",
   },
+  icons: {
+    icon: "/favicon.png",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Abhipriyo Biswas | Software Engineer",
