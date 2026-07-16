@@ -9,7 +9,7 @@ export default function Hero() {
       <div className={styles['hero-noise']}></div>
       <div className={styles['hero-avail']}>
         <Hash size={10} color='oklch(70% .02 250' />
-        available for junior data engineer roles
+        open to python, full stack, data analyst & data engineer roles
       </div>
       <h1 className={styles['hero-title']}>
         Engineering reliable <span className={styles['hero-title-hl']}> software & data </span>
