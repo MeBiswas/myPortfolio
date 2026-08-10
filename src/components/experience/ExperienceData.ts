@@ -3,7 +3,7 @@ import { Experience } from '../../types';
 export const experiences: Experience[] = [
     {
         id: 'telus',
-        role: 'Full Stack Developer / Contractor',
+        role: 'Consultant / Contractor',
         company: 'TELUS Digital',
         location: 'Remote, Noida, India',
         dates: 'Aug 2021 — Dec 2025',
@@ -35,22 +35,22 @@ export const experiences: Experience[] = [
         tech: ['React.js', 'AngularJS', 'APIs', 'Agile'],
         filled: false,
     },
-    {
-        id: 'globiz',
-        role: 'Mobile Application Developer',
-        company: 'Globiz Technology Inc.',
-        location: 'Remote, Ludhiana, India',
-        dates: 'Jun 2020 — Dec 2020',
-        bullets: [
-        'Member of both the design and development teams; delivered fully responsive, cross-browser-tested, pixel-perfect static website designs from mockups, and pixel-perfect mobile app screens from UI mockups in React Native.',
-        'Developed hybrid mobile applications using React Native, consuming RESTful APIs and integrating structured backend data into performant mobile UIs, including LocalCart and LineManagement (deployed to Google Play Store).',
-        ],
-        tech: ['React Native', 'REST APIs', 'Mobile'],
-        filled: false,
-    },
+    // {
+    //     id: 'globiz',
+    //     role: 'Mobile Application Developer',
+    //     company: 'Globiz Technology Inc.',
+    //     location: 'Remote, Ludhiana, India',
+    //     dates: 'Jun 2020 — Dec 2020',
+    //     bullets: [
+    //     'Member of both the design and development teams; delivered fully responsive, cross-browser-tested, pixel-perfect static website designs from mockups, and pixel-perfect mobile app screens from UI mockups in React Native.',
+    //     'Developed hybrid mobile applications using React Native, consuming RESTful APIs and integrating structured backend data into performant mobile UIs, including LocalCart and LineManagement (deployed to Google Play Store).',
+    //     ],
+    //     tech: ['React Native', 'REST APIs', 'Mobile'],
+    //     filled: false,
+    // },
     {
         id: 'promatics',
-        role: 'Web Designer → Associate Frontend Developer',
+        role: 'Web Designer',
         company: 'Promatics Technologies Pvt. Ltd.',
         location: 'Ludhiana, India',
         dates: 'Aug 2018 — May 2020',
