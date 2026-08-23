@@ -1,16 +1,36 @@
 'use client';
 
+import Link from 'next/link';
+import {usePathname} from 'next/navigation';
+import { Download, ArrowLeft } from 'lucide-react';
+
 import Image from 'next/image';
-import { Download } from 'lucide-react';
 import styles from './Navbar.module.css';
 import logo from '../../../public/logo.png';
 
 export default function Navbar() {
+  const pathname = usePathname();
+
+  if (pathname === '/blog' || pathname.startsWith('/blog/')) {
+    return (
+      <nav className={styles.nav}>
+        <div className={styles['nav-alt']}>
+          <div className={styles['nav-logo']}>
+            <Image src={logo} alt="logo" width={100} />
+          </div>
+          <div className={styles['nav-secondary']}>
+            <Link href="/"><ArrowLeft size={16} /> Portfolio</Link>
+            <span>Blog</span>
+          </div>
+        </div>
+      </nav>
+    );
+  }
+
   return (
     <nav className={styles.nav}>
       <div className={styles['nav-alt']}>
         <div className={styles['nav-logo']}>
-          {/* ab<span className={styles['nav-logo-span']}>.</span>biswas */}
           <Image src={logo} alt="logo" width={100} />
         </div>
         <div className={styles['nav-links']}>
@@ -19,16 +39,9 @@ export default function Navbar() {
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
+          <Link href="/blog">Blog</Link>
         </div>
         <div className={styles['nav-right']}>
-          {/* <div className={styles['role-toggle']}>
-            <button className={`${styles['rt-btn']} ${styles.active}`} id="de-btn">
-              Data Engineer
-            </button>
-            <button className={styles['rt-btn']} id="da-btn">
-              Data Analyst
-            </button>
-          </div> */}
           <a
             className={styles['btn-resume']}
             download="Abhipriyo_Biswas_Resume.pdf"

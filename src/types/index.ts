@@ -1,5 +1,10 @@
 import { LucideIcon } from 'lucide-react';
 
+export interface BlogPageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
 export interface Project {
   id: string;
   year: number;
@@ -19,4 +24,15 @@ export interface Experience {
   filled: boolean;
   location: string;
   bullets: string[];
+}
+
+export interface BlogPost {
+  id: string;
+  slug: string;
+  date: string;
+  title: string;
+  content: string;
+  readTime: string;
+  description: string;
+  category: 'Frontend' | 'Backend' | 'Fullstack' | 'DevOps' | 'Other';
 }

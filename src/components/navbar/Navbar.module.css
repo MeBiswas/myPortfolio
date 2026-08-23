@@ -100,6 +100,29 @@
   font-size: 14px;
 }
 
+.nav-secondary {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-secondary a {
+  gap: 8px;
+  font-size: 14px;
+  align-items: center;
+  color: var(--text2);
+  display: inline-flex;
+  transition: color 0.18s;
+}
+
+.nav-secondary span {
+  font-size: 14px;
+}
+
+.nav-secondary a:hover {
+  color: var(--teal);
+}
+
 @media (max-width: 900px) {
   .nav {
     padding: 0 20px;
