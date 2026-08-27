@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles['footer-wrap']}>
         <div className={styles['footer-left']}>
-          © 2026 <span className={styles['footer-left-strong']}>Abhipriyo Biswas</span> — Python, Full Stack, Data Analyst & Data Engineer
+          © 2026 <span className={styles['footer-left-strong']}>Abhipriyo Biswas</span> — Frontend Developer, Backend Developer, Python, Full Stack, Data Analyst & Data Engineer
         </div>
         <div className={styles['footer-socials']}>
           <a href="https://github.com/MeBiswas" target="_blank" rel="noopener noreferrer" className={styles.fsoc} title="GitHub">
