@@ -11,6 +11,7 @@ export interface PostMetaData {
   category: string;
   readTime: string;
   description: string;
+  tags: string[];
 }
 
 export function getAllPosts(): PostMetaData[] {
@@ -27,6 +28,7 @@ export function getAllPosts(): PostMetaData[] {
       return {
         slug,
         ...(data as Omit<PostMetaData, 'slug'>),
+        tags: Array.isArray(data.tags) ? data.tags : [],
       };
     });
 }
@@ -50,6 +52,7 @@ export function getPostBySlug(slug: string) {
     meta: {
       slug,
       ...(data as Omit<PostMetaData, 'slug'>),
+      tags: Array.isArray(data.tags) ? data.tags : [],
     },
     content,
   };
