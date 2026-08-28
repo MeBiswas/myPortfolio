@@ -34,6 +34,8 @@ Every click, every scroll-triggered load, every form submission on the web is a 
 
 ---
 
+![Client-server model diagram](/The%20Client-Server%20Model.png)
+
 ## Chapter 2: Finding the Right Address — Domain Names and DNS
 
 Here's a problem: servers don't live at friendly addresses like "google.com." They live at numeric addresses called **IP addresses** — something like `142.250.72.14`. No one wants to memorize strings of numbers for every website they visit.
@@ -56,6 +58,8 @@ This whole lookup usually takes milliseconds — invisible, but essential.
 
 ---
 
+![How DNS Resolution Works model diagram](/DNS%20Resolution%20Works.png)
+
 ## Chapter 3: HTTP vs. HTTPS — The Language of the Web (and Its Lock)
 
 Once your browser knows *where* to send its request, it needs to know *how* to phrase it. That's where **HTTP** comes in — HyperText Transfer Protocol. It's the agreed-upon language browsers and servers use to talk to each other: "GET me this page," "POST this form data," and so on.
@@ -72,6 +76,8 @@ Nearly every modern website uses HTTPS, and browsers actively warn users when a 
 > **Screenshot: Browser Address Bar Comparison** — *Side-by-side comparison showing a padlock icon and "https://" for a secure site, versus a "Not Secure" warning label for a plain HTTP site.*
 
 ---
+
+![Browser Address Bar Comparison](/Browser%20Address%20Bar%20Comparison.png)
 
 ## Chapter 4: Hosting — Giving Your Website a Home
 
@@ -103,6 +109,8 @@ Here's the simplified journey:
 6. **JavaScript execution** — Somewhere in this process, the browser also runs your JavaScript, which can modify the DOM and CSSOM, triggering the browser to re-calculate layout and repaint — this is how buttons respond to clicks and pages update without a full reload.
 
 > **Diagram: Browser Rendering Flow** — *A left-to-right pipeline diagram: HTML → DOM, CSS → CSSOM, DOM + CSSOM → Render Tree → Layout → Paint, with a JavaScript arrow looping back into the DOM/CSSOM stage.*
+
+![Browser Rendering Flow](/Browser%20Rendering%20Flow.png)
 
 Understanding this pipeline is genuinely one of the most valuable things a frontend developer can know — it explains *why* certain code makes pages slow, and *why* some changes cause visible flickering (called "layout thrashing") while others don't.
 
@@ -136,6 +144,8 @@ When your frontend talks to an API, the data usually comes back in a format call
 
 > **Diagram: Frontend Fetching Data from an API** — *A browser icon sending a request labeled "GET /users" to a server icon, with the server responding with a JSON data bubble containing sample key-value data.*
 
+![Frontend Fetching Data from an API](/Frontend%20Fetching%20Data%20from%20an%20API.png)
+
 ---
 
 ## Chapter 8: One Page, Every Screen — Responsive Design
@@ -152,6 +162,8 @@ A few core ideas:
 A responsive site isn't just "nice to have." Mobile traffic makes up a huge share of web visits worldwide, and a broken mobile experience can quietly cost a site the majority of its potential audience.
 
 > **Screenshot: Responsive Layout Comparison** — *Three side-by-side mockups of the same webpage: a wide multi-column desktop layout, a two-column tablet layout, and a single-column stacked mobile layout.*
+
+![Responsive Layout Comparison](/Responsive%20Layout%20Comparison.png)
 
 ---
 
@@ -242,6 +254,8 @@ Check your page across different screen sizes, try navigating it with only a key
 Push your code to a hosting provider so it's publicly accessible, connect a domain name if you have one, and confirm HTTPS is active. From here, any future updates simply involve pushing new code — many hosting setups will automatically rebuild and redeploy your site.
 
 > **Screenshot: Simple Project Folder Structure** — *A file-tree illustration showing a project root folder containing an index.html file, a styles folder, a scripts folder, and an images folder.*
+
+![Simple Project Folder Structure](/Simple%20Project%20Folder%20Structure.png)
 
 That's it — you've walked the entire journey from an empty folder to a live website, using nearly every concept covered in this post.
 
