@@ -17,16 +17,8 @@ export const skillGroups: SkillGroup[] = [
     skills: ['Node.js', 'Express.js', 'FAST API', 'REST APIs', 'GraphQL', 'JSON', 'Postman', 'JWT', 'OAuth2', 'Integrations', 'Layered API Architecture', 'Redis (Caching)'],
   },
   {
-    title: 'Data Engineering',
-    skills: ['ETL Pipelines', 'dbt', 'Data Modeling', 'Data Warehousing', 'Batch Processing', 'Idempotent Upserts', 'Data Quality'],
-  },
-  {
-    title: 'Data Analytics',
-    skills: ['Data Analysis', 'Data Visualization', 'Dashboards', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'KPIs'],
-  },
-  {
     title: 'Databases',
-    skills: ['PostgreSQL', 'MySQL'],
+    skills: ['PostgreSQL', 'MySQL', 'MongoDB', 'Database Design', 'Data Modeling', 'Indexing', 'Query Optimization'],
   },
   {
     title: 'Advanced SQL',
@@ -35,6 +27,14 @@ export const skillGroups: SkillGroup[] = [
   {
     title: 'Testing & Quality',
     skills: ['Unit Testing', 'Jest', 'Enzyme', 'React Testing Library', 'Debugging', 'Production Issue Resolution', 'Error Handling', 'Logging', 'Code Coverage'],
+  },
+  {
+    title: 'Data Analytics',
+    skills: ['Data Analysis', 'Data Visualization', 'Dashboards', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'KPIs'],
+  },
+  {
+    title: 'Data Engineering',
+    skills: ['ETL Pipelines', 'dbt', 'Data Modeling', 'Data Warehousing', 'Batch Processing', 'Idempotent Upserts', 'Data Quality'],
   },
   {
     title: 'Big Data & Workflow',

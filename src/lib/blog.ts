@@ -11,8 +11,20 @@ export const BLOG_POSTS: BlogPost[] = [
         description: 'An exploration of the underlying mechanisms that make the web function.',
         content: `
             When you type a website address and press Enter, your browser sends a request to a server asking...
-        `
-  }
+        `,
+    },
+    {
+        id: '2',
+        date: '2026-08-30',
+        readTime: '20 min read',
+        category: 'System Design',
+        slug: 'system-design-for-beginners',
+        title: 'System Design for Beginners',
+        description: 'A comprehensive guide to understanding system design principles.',
+        content: `
+            System design is less about writing code and more about drawing the blueprint that code will live inside...
+        `,
+    }
 ]
 
 export const getAllPosts = (): BlogPost[] => BLOG_POSTS
