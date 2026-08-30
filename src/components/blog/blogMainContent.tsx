@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 import styles from './Blog.module.css';
 import type { PostMetaData } from '@/lib/mdx';
 
-const CATEGORIES = ['All', 'Frontend', 'Backend', 'Database', 'Data Engineering', 'Career'];
+const CATEGORIES = ['All', 'Frontend', 'Backend', 'Database', 'System Design', 'Data Engineering', 'Career'];
 
 type Props = {data: PostMetaData[]}
 

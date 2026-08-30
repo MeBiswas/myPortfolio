@@ -2,6 +2,21 @@ import { Experience } from '../../types';
 
 export const experiences: Experience[] = [
     {
+        id: 'freelance',
+        role: 'Freelance Web Developer',
+        company: 'Self-Employed',
+        location: 'Remote, India',
+        dates: 'Jan 2026 — Present',
+        bullets: [
+            'Developed and maintained responsive websites and web applications for local clients across various industries, utilizing modern web technologies and frameworks.',   
+            'Collaborated with clients to gather requirements, design user interfaces, and implement features that meet their business needs and enhance user experience.',
+            'Implemented best practices for web development, including code optimization, accessibility, and performance improvements, ensuring high-quality deliverables.',
+            'Provided ongoing support and maintenance for client projects, addressing issues, implementing updates, and ensuring the smooth operation of web applications.',    
+        ],
+        tech: ['React.js', 'Next.js', 'Node.js', 'TypeScript', 'JavaScript', 'HTML/CSS', 'REST APIs'],
+        filled: true,
+    },  
+    {
         id: 'telus',
         role: 'Consultant / Contractor',
         company: 'TELUS Digital',
@@ -19,7 +34,7 @@ export const experiences: Experience[] = [
             'Worked within Agile teams using Git-based version control, contributing to production releases and maintaining high service stability across customer-facing systems.',
         ],
         tech: ['Python', 'SQL', 'REST APIs', 'Git', 'Agile'],
-        filled: true,
+        filled: false,
     },
     {
         id: 'etelligens',
@@ -35,19 +50,19 @@ export const experiences: Experience[] = [
         tech: ['React.js', 'AngularJS', 'APIs', 'Agile'],
         filled: false,
     },
-    // {
-    //     id: 'globiz',
-    //     role: 'Mobile Application Developer',
-    //     company: 'Globiz Technology Inc.',
-    //     location: 'Remote, Ludhiana, India',
-    //     dates: 'Jun 2020 — Dec 2020',
-    //     bullets: [
-    //     'Member of both the design and development teams; delivered fully responsive, cross-browser-tested, pixel-perfect static website designs from mockups, and pixel-perfect mobile app screens from UI mockups in React Native.',
-    //     'Developed hybrid mobile applications using React Native, consuming RESTful APIs and integrating structured backend data into performant mobile UIs, including LocalCart and LineManagement (deployed to Google Play Store).',
-    //     ],
-    //     tech: ['React Native', 'REST APIs', 'Mobile'],
-    //     filled: false,
-    // },
+    {
+        id: 'globiz',
+        role: 'Mobile Application Developer',
+        company: 'Globiz Technology Inc.',
+        location: 'Remote, Ludhiana, India',
+        dates: 'Jun 2020 — Dec 2020',
+        bullets: [
+        'Member of both the design and development teams; delivered fully responsive, cross-browser-tested, pixel-perfect static website designs from mockups, and pixel-perfect mobile app screens from UI mockups in React Native.',
+        'Developed hybrid mobile applications using React Native, consuming RESTful APIs and integrating structured backend data into performant mobile UIs, including LocalCart and LineManagement (deployed to Google Play Store).',
+        ],
+        tech: ['React Native', 'REST APIs', 'Mobile'],
+        filled: false,
+    },
     {
         id: 'promatics',
         role: 'Web Designer',
